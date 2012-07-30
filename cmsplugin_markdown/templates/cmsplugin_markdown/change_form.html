@@ -1,0 +1,28 @@
+{% extends "admin/cms/page/plugin_change_form.html" %}
+
+{% block top %}<div id="epiceditor"></div>{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cmsplugin_markdown/themes/base/epiceditor.css" />
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<script src="{{ STATIC_URL }}cmsplugin_markdown/js/epiceditor.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('#markdownplugin_form>div').hide();
+    var opts = {
+        basePath: '{{ STATIC_URL }}cmsplugin_markdown/'
+        ,clientSideStorage: false
+    }
+    var editor = new EpicEditor(opts).load();
+    var text = jQuery(editor.getElement('editor').body);
+    text.html($('#id_markdown_text').html().replace(/\n/g, '<br />'));
+    text.keyup(function () {
+        $('#id_markdown_text').val(editor.exportFile(null, 'text'));
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,3 @@
+A plugin for django-cms that aims to replace the standard text plugin with it's
+WYSIWYG editors. With cmsplugin-markdown you can write your content in Markdown
+using EpicEditor (http://oscargodson.github.com/EpicEditor/)
