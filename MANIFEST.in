@@ -6,3 +6,4 @@ include README.md
 graft cmsplugin_markdown
 global-exclude *.orig *.pyc *.log
 prune cmsplugin_markdown/tests/coverage/
+prune cmsplugin_markdown/.ropeproject
