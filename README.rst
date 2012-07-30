@@ -11,6 +11,7 @@ Installation
 You need to install the following prerequisites in order to use this app::
 
     pip install Django
+    pip install django-cms
     pip install South
     pip install Markdown
 
