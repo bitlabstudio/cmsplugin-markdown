@@ -23,10 +23,11 @@ If you feel adventurous and want to install the latest commit from GitHub::
 
     $ pip install -e git://github.com/bitmazk/cmsplugin-markdown.git#egg=cmsplugin_markdown
 
-Add ``user_tags`` to your ``INSTALLED_APPS``::
+Add ``cmsplugin_markdown`` and ``django.contrib.markup`` to your ``INSTALLED_APPS``::
 
     INSTALLED_APPS = (
         ...,
+        'django.contrib.markup',
         'cmsplugin_markdown',
     )
 
