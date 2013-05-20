@@ -14,7 +14,7 @@
 $(document).ready(function () {
     $('#markdownplugin_form>div').hide();
     var opts = {
-        basePath: '{{ STATIC_URL }}cmsplugin_markdown/'
+        basePath: '{{ STATIC_URL }}cmsplugin_markdown'
         ,clientSideStorage: false
     }
     var editor = new EpicEditor(opts).load();
