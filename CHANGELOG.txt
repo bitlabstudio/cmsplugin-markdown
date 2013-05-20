@@ -1,5 +1,7 @@
 === ongoing ===
 
+=== 0.1.1 ===
+
 - fixed wrong basePath when invoking epiceditor in Django admin
 
 === 0.1 ===
