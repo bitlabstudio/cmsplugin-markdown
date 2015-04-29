@@ -1,5 +1,9 @@
 === ongoing ===
 
+=== 0.1.2 ===
+
+- Updated django-cms template name
+
 === 0.1.1 ===
 
 - fixed wrong basePath when invoking epiceditor in Django admin
