@@ -1,6 +1,4 @@
-#-*- coding: utf-8 -*-
-
-
+# -*- coding: utf-8 -*-
 def rename_tables(db, table_mapping, reverse=False):
     """
     Renames tables from source to destination name, if the source exists and
