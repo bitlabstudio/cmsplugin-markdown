@@ -2,5 +2,6 @@
 *.egg-info/
 chromedriver.log
 coverage/
+.coverage
 dist/
 .tox

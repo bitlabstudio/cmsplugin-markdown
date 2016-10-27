@@ -1,5 +1,7 @@
 === ongoing ===
 
+- Added tests and new migrations
+
 === 0.1.3 ===
 
 - Updated setup.py
