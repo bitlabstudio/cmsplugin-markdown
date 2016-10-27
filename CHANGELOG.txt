@@ -1,5 +1,7 @@
 === ongoing ===
 
+=== 0.1.4 ===
+
 - Added tests and new migrations
 
 === 0.1.3 ===
