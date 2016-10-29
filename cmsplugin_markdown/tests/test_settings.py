@@ -38,7 +38,7 @@ STATICFILES_DIRS = (
 TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
     'APP_DIRS': True,
-    'DIRS': [os.path.join(APP_ROOT, 'tests/test_app/templates')],
+    'DIRS': [os.path.join(APP_ROOT, 'tests/templates')],
     'OPTIONS': {
         'context_processors': (
             'django.contrib.auth.context_processors.auth',
@@ -47,6 +47,7 @@ TEMPLATES = [{
             'django.template.context_processors.media',
             'django.template.context_processors.static',
             'cms.context_processors.cms_settings',
+            'sekizai.context_processors.sekizai',
         )
     }
 }]
@@ -74,6 +75,7 @@ EXTERNAL_APPS = [
     'menus',
     'treebeard',
     'sekizai',
+    'django_markwhat',
 ]
 
 INTERNAL_APPS = [
@@ -97,3 +99,7 @@ MIDDLEWARE_CLASSES = [
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.language.LanguageCookieMiddleware',
 ]
+
+CMS_TEMPLATES = (
+    ('base.html', 'Base'),
+)

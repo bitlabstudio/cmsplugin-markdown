@@ -1,0 +1,19 @@
+{% load cms_tags sekizai_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {% render_block "css" %}
+</head>
+<body>
+  {% cms_toolbar %}
+  <h1>{% page_attribute "title" %}</h1>
+  {% placeholder "01_main" %}
+  {% render_block "js" %}
+</body>
+</html>

@@ -1,5 +1,7 @@
 === ongoing ===
 
+- Fixed epic editor integration
+
 === 0.1.4 ===
 
 - Added tests and new migrations
